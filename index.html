@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Оқушы дауысы</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">🎓 Оқушы дауысы</div><button onclick="location.href='admin.html'">Әкімшілік</button></header>
+<main>
+<section class="hero"><div class="pill">🔒 Анонимді • Қауіпсіз • Маңызды</div><h1>Сенің дауысың<br><span>мектепті жақсартады.</span></h1><p>Ұсынысыңды, идеяңды немесе мектептегі мәселені аты-жөніңді көрсетпей хабарла.</p><a class="cta" href="#feedback">Пікір қалдыру →</a></section>
+<section class="features"><article>💡<b>Ұсыныс</b><small>Мектепті жақсартатын идея</small></article><article>🏫<b>Мәселе</b><small>Назар аударуды қажет ететін жағдай</small></article><article>🎉<b>Идея</b><small>Жаңа іс-шара немесе жоба</small></article><article>❤️<b>Алғыс</b><small>Жақсы іске алғыс білдіру</small></article></section>
+<section id="feedback" class="panel"><h2>Анонимді пікір қалдыр</h2><p>Атыңды, телефон нөміріңді немесе сыныбыңды жазудың қажеті жоқ.</p>
+<form id="form"><label>Пікір санаты<select id="category"><option>Ұсыныс</option><option>Мәселе</option><option>Іс-шара идеясы</option><option>Алғыс</option><option>Басқа</option></select></label>
+<label>Пікірің<textarea id="message" maxlength="1000" required placeholder="Ойыңды осында жаз..."></textarea></label><div class="bottom"><span id="count">0 / 1000</span><button class="cta" type="submit">Жіберу 🚀</button></div></form><div id="ok" class="ok">✅ Пікірің қабылданды. Рақмет!</div></section>
+<section class="qr panel"><h2>📱 QR-код арқылы</h2><p>Мектепте осы QR-кодты орналастырып, оқушыларды пікір бетіне бағыттауға болады.</p><input id="url" placeholder="Сайт URL-і"><button onclick="qr()">QR-код жасау</button><div id="qr"></div></section>
+</main><footer>«Оқушы дауысы» • Мектеп қауымдастығы</footer><script src="app.js"></script></body></html>
